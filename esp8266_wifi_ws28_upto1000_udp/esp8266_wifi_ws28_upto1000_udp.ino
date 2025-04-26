@@ -77,6 +77,7 @@ void loop() {
 
 
 
+
       // Process RGB data if no special sequence is found
       for (int i = 0; i < NUM_LEDS; i++) {
         byte r = Data[(int(i/chunk_count))*3 + 0];
