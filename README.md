@@ -1,68 +1,67 @@
-# LED Rod Controller
+# LED Rod Controller for **Node Room** ✨
 
-A WiFi-controlled LED rod using ESP8266 and WS2812B LED strip. This project allows you to control up to 1000 LEDs through UDP communication.
+This project powers the interactive lighting installation **"Node Room"**, a metaphor for small and large human cycles. Visitors can influence and be influenced by the space through light and sound. An old control device allows participation in shaping the atmosphere.
 
-## Features
+This controller enables **live, sound-reactive lighting effects** using **ESP8266** and **WS2812B LED strips**. The system communicates over WiFi via UDP, making it ideal for real-time, dynamic environments.
 
-- WiFi connectivity using ESP8266
+> 🌀 _This is part of a larger interactive installation._  
+> 📸 _**[Images Placeholder – Coming Soon]**_  
+> 🔗 _**[Project Website – Coming Soon]**_
+![Node Room Installation](photos/noderoom.jpg)
+![Node Room Installation](photos/noderoom.gif)
+![interactive Installation](photos/interactive.jpg)
+![interactive Installation](photos/interactive.gif)
+
+---
+
+## 🔧 Features
+
+- Live LED control via WiFi
+- Reactive to sound and external input (expandable)
 - UDP-based control protocol
-- Support for up to 1000 WS2812B LEDs
-- Automatic LED timeout (turns off after 2 seconds of inactivity)
-- Static IP configuration
-- FastLED library for efficient LED control
+- Support for up to **1000 WS2812B LEDs**
+- Auto-timeout: LEDs turn off after 2 seconds of inactivity
+- Static IP for consistent network behavior
+- Built with **FastLED** for high-performance effects
 
-## Hardware Requirements
+---
 
-- ESP8266 NodeMCU or similar board
-- WS2812B LED strip (up to 1000 LEDs)
-- Power supply suitable for your LED strip
-- WiFi network
+## 🛠 Hardware Requirements
 
-## Pin Configuration
+- **ESP8266** (e.g., NodeMCU)
+- **WS2812B LED strip** (up to 1000 LEDs)
+- 5V power supply (sized for your LED count)
+- WiFi network or mobile hotspot
 
-- LED Data Pin: D1 (GPIO5)
-- Board LED: D4 (built-in LED)
+---
 
-## Network Configuration
+## ⚙️ Pin Configuration
 
-- Static IP: 192.168.43.101
-- Gateway: 192.168.43.1
-- Subnet: 255.255.255.0
-- UDP Port: 8266
+- **LED Data Pin:** D1 (GPIO5)  
+- **Status LED:** D4 (onboard LED)
 
-## Protocol
+---
 
-The LED control uses a simple UDP protocol:
-- Sync byte: 0xAA
-- Followed by RGB data for each LED (3 bytes per LED)
+## 🌐 Network Configuration
 
-## Setup
+- **Static IP:** `192.168.43.101`  
+- **Gateway:** `192.168.43.1`  
+- **Subnet:** `255.255.255.0`  
+- **UDP Port:** `8266`
 
-1. Update the WiFi credentials in the code:
+---
+
+## 📡 Control Protocol
+
+UDP packet structure:
+- **First byte:** `0xAA` (sync byte)
+- **Next bytes:** RGB values for each LED (3 bytes per LED)
+
+---
+
+## 🚀 Setup Instructions
+
+1. Update your WiFi credentials in the code:
    ```cpp
    const char* ssid = "your_ssid";
    const char* password = "your_password";
-   ```
-
-2. Adjust the number of LEDs if needed:
-   ```cpp
-   #define NUM_LEDS 140  // Change this to match your LED count
-   ```
-
-3. Upload the code to your ESP8266
-
-## Usage
-
-Send UDP packets to the ESP8266's IP address on port 8266 with the following format:
-- First byte: 0xAA (sync byte)
-- Remaining bytes: RGB data for each LED (3 bytes per LED)
-
-## Safety Notes
-
-- Ensure proper power supply for your LED strip
-- Consider adding a fuse for protection
-- Be mindful of power consumption and heat generation
-
-## License
-
-This project is open source and available for personal and commercial use. 
