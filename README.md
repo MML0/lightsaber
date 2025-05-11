@@ -5,8 +5,7 @@ This project powers the interactive lighting installation **"Node Room"**, a met
 This controller enables **live, sound-reactive lighting effects** using **ESP8266** and **WS2812B LED strips**. The system communicates over WiFi via UDP, making it ideal for real-time, dynamic environments.
 
 > 🌀 _This is part of a larger interactive installation._  
-> 📸 _**[Images Placeholder – Coming Soon]**_  
-> 🔗 _**[Project Website – Coming Soon]**_
+
 ![Node Room Installation](photos/noderoom.jpg)
 ![Node Room Installation](photos/noderoom.gif)
 ![interactive Installation](photos/interactive.jpg)
