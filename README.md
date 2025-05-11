@@ -13,6 +13,11 @@ This controller enables **live, sound-reactive lighting effects** using **ESP826
 
 ---
 
+## 💖 Support, Management, and Hosting
+
+These interactive installations and its related event were generously supported, expertly managed, and graciously hosted by Wenodes ([https://wenodes.org/](https://wenodes.org/)). Their multifaceted contribution was essential to the success of this endeavor.
+
+---
 ## 🔧 Features
 
 - Live LED control via WiFi
