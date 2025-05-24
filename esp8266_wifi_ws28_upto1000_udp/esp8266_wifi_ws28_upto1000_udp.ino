@@ -15,7 +15,7 @@ const unsigned long ledOffDelay = 2000; // 10 seconds timeout to turn off LEDs
 
 const char* ssid = "."; // Replace with your network SSID
 const char* password = "12345678an";           // Replace with your network password
-const IPAddress staticIP(192, 168, 43, 205);   // Static IP for the ESP8266 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,
+const IPAddress staticIP(192, 168, 43, 206);   // Static IP for the ESP8266 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,
 const IPAddress gateway(192, 168, 43, 1);      // Default gateway
 const IPAddress subnet(255, 255, 255, 0);      // Subnet mask
 
