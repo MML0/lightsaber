@@ -41,6 +41,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 pixel_bytes = bytearray(140*3)
 def send_columns_to_esps():
     esp_ip = [
+        {'ip': '192.168.43.151', 'revers': False},
         {'ip': '192.168.43.119', 'revers': False},
         {'ip': '192.168.43.137', 'revers': False},
 

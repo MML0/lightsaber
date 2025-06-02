@@ -38,8 +38,9 @@ while True:
 
     #led_data = b'\xFF\xFF\xFF' * 300  # Sync byte + RGB data for each LED
 
-    sock.sendto(bytearray(b'\xAA' + led_data), (esp_ip, 8266))
-    sock.sendto(bytearray(b'\xAA' + led_data), ("192.168.43.206", 8266))
+    # sock.sendto(bytearray(b'\xAA' + led_data), (esp_ip, 8266))
+    sock.sendto(bytearray(b'\xAA' + led_data), ("192.168.43.151", 8266))
+    sock.sendto(bytearray(b'\xAA' + bytearray(140 *  b'\xa0\xa0\xa0')), ("192.168.43.188", 8266))
 
     # i += 1
     # Wait for the ESP's response
