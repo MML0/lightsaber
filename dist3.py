@@ -95,7 +95,7 @@ def send_columns_to_esps():
         {'ip': '192.168.43.119', 'revers': False},
         {'ip': '192.168.43.156', 'revers': False},
         {'ip': '192.168.43.118', 'revers': False},
-        {'ip': '192.168.43.187', 'revers': False},
+        {'ip': '192.168.43.135', 'revers': False},
         {'ip': '192.168.43.166', 'revers': False},
         {'ip': '192.168.43.158', 'revers': False},
         {'ip': '192.168.43.157', 'revers': False},
