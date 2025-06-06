@@ -168,7 +168,7 @@ def send_columns_to_esps():
 
 def onOnToOff(channel, sampleIndex, val, prev):
     # print("Triggered: Grabbing frame and sending to ESPs")
-    top = op('out1')  # TouchDesigner TOP
+    top = op('out3')  # TouchDesigner TOP
     top.save("jpg_out/snapshot.png")
     send_columns_to_esps()
 
