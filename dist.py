@@ -48,15 +48,14 @@ def send_columns_to_esps():
         {'ip': '192.168.43.126', 'revers': False},
         {'ip': '192.168.43.120', 'revers': False},
         {'ip': '192.168.43.193', 'revers': False},
+        {'ip': '192.168.43.183', 'revers': False},
         {'ip': '192.168.43.174', 'revers': False},
-        {'ip': '192.168.43.177', 'revers': False},
         {'ip': '192.168.43.140', 'revers': False},
         {'ip': '192.168.43.115', 'revers': False},
-        
 
         {'ip': '192.168.43.100', 'revers': False},
         {'ip': '192.168.43.179', 'revers': False},
-        {'ip': '192.168.43.188', 'revers': False},
+        {'ip': '192.168.43.102', 'revers': False},
         {'ip': '192.168.43.124', 'revers': False},
         {'ip': '192.168.43.190', 'revers': False},
         {'ip': '192.168.43.122', 'revers': False},
