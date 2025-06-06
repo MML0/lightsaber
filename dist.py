@@ -42,15 +42,18 @@ pixel_bytes = bytearray(140*3)
 def send_columns_to_esps():
     esp_ip = [
         ##-----------------------------------------------------------------  LINE 1
-        {'ip': '192.168.43.115', 'revers': False},
-        {'ip': '192.168.43.140', 'revers': False},
-        {'ip': '192.168.43.177', 'revers': False},
-        {'ip': '192.168.43.174', 'revers': False},
-        {'ip': '192.168.43.193', 'revers': False},
-        {'ip': '192.168.43.120', 'revers': False},
-        {'ip': '192.168.43.126', 'revers': False},
-        {'ip': '192.168.43.155', 'revers': False},
+        
         {'ip': '192.168.43.181', 'revers': False},
+        {'ip': '192.168.43.155', 'revers': False},
+        {'ip': '192.168.43.126', 'revers': False},
+        {'ip': '192.168.43.120', 'revers': False},
+        {'ip': '192.168.43.193', 'revers': False},
+        {'ip': '192.168.43.174', 'revers': False},
+        {'ip': '192.168.43.177', 'revers': False},
+        {'ip': '192.168.43.140', 'revers': False},
+        {'ip': '192.168.43.115', 'revers': False},
+        
+
         {'ip': '192.168.43.100', 'revers': False},
         {'ip': '192.168.43.179', 'revers': False},
         {'ip': '192.168.43.188', 'revers': False},
